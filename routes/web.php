@@ -15,4 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('download', 'DownloadController@download');
+Route::get('redeem', 'DownloadController@redeem');
+
+Route::post('checkcode', 'DownloadController@check');
+
+// Route::get('download', 'DownloadController@download');
